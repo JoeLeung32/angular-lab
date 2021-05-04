@@ -1,0 +1,22 @@
+<h3> ## Joe's Family ## </h3>
+<app-joe>Son</app-joe>
+<app-emily>Emily #1</app-emily>
+<app-emily [color]="'purple'">Emily #2</app-emily>
+<app-emily
+        [color]="'green'"
+        [(size)]="fontSizePx"
+>
+    Emily #3
+</app-emily>
+<app-emily
+        [color]="'orange'"
+        [(size)]="fontSizePx"
+>
+    Emily #4
+</app-emily>
+<div [style.font-size.px]="fontSizePx">Resizable {{fontSizePx}}px</div>
+<div>
+    <p>
+        <button (click)="handleClick($event)">Reset to {{defaultFontSizePx}}px</button>
+    </p>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <p>
+        <button (click)="reduce()">Font Size -1</button>
+        &nbsp;
+        <button (click)="add()">Font Size +1</button>
+        &nbsp;
+        <button (click)="reset(this.default)">Reset to {{default}}px</button>
+    </p>
+</div>
+<div class="emily"
+     [style.color]="color"
+     [style.font-size.px]="size"
+><ng-content></ng-content> {{size}}px</div>

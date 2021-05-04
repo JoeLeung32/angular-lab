@@ -1,0 +1,9 @@
+::ng-deep body {
+  app-root {
+    > * {
+      text-align: center;
+      overflow: auto;
+      height: 100vh !important;
+    }
+  }
+}
