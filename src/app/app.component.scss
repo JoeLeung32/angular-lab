@@ -1,9 +1,12 @@
-::ng-deep body {
-  app-root {
-    > * {
-      text-align: center;
-      overflow: auto;
-      height: 100vh !important;
-    }
-  }
+//::ng-deep body {
+//  app-root {
+//    > * {
+//      overflow: auto;
+//      height: 100vh !important;
+//    }
+//  }
+//}
+
+.text-center {
+  text-align: center;
 }
