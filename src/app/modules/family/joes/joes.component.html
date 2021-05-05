@@ -2,6 +2,13 @@
 <app-joe>Son</app-joe>
 <app-emily>Emily #1</app-emily>
 <app-emily [color]="'purple'">Emily #2</app-emily>
+<hr />
+<div>
+    <p>
+        <button (click)="handleClick($event)">Reset to {{defaultFontSizePx}}px</button>
+    </p>
+</div>
+<div [style.font-size.px]="fontSizePx">Resizable {{fontSizePx}}px</div>
 <app-emily
         [color]="'green'"
         [(size)]="fontSizePx"
@@ -14,9 +21,3 @@
 >
     Emily #4
 </app-emily>
-<div [style.font-size.px]="fontSizePx">Resizable {{fontSizePx}}px</div>
-<div>
-    <p>
-        <button (click)="handleClick($event)">Reset to {{defaultFontSizePx}}px</button>
-    </p>
-</div>
